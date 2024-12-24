@@ -1,0 +1,10 @@
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\bin\Debug\JsonTranslate.exe.config
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\bin\Debug\JsonTranslate.exe
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\bin\Debug\JsonTranslate.pdb
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\obj\Debug\JsonTranslate.csproj.AssemblyReference.cache
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\obj\Debug\JsonTranslate.csproj.CoreCompileInputs.cache
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\obj\Debug\JsonTranslate.exe
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\obj\Debug\JsonTranslate.pdb
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ΗΟΜΕ\source\repos\JsonTranslate\JsonTranslate\obj\Debug\JsonTran.965240D0.Up2Date
