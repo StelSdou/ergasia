@@ -36,9 +36,11 @@ namespace txtToJson
             if (File.Exists(filePath))
             {
                 string text = File.ReadAllText(filePath);
+                string newText = text.Replace("\r", "").Replace("\n", "_");
+                File.WriteAllText(filePath, newText);
 
-                string newText = text.Replace(" ", "_").Replace("\"_", "\" ");
-
+                text = File.ReadAllText(filePath);
+                newText = text.Replace(" ", "_").Replace("\"_", "\" ").Replace("_\"", " \"");
                 File.WriteAllText(filePath, newText);
 
                 int id = 0;
@@ -46,20 +48,19 @@ namespace txtToJson
                 string tit = "";
                 using (StreamReader sr = new StreamReader(filePath))
                 {
-                    string line;
+                    string line = sr.ReadLine();
 
-                    while ((line = sr.ReadLine()) != null)
-                    {
-                        string[] words = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                    string[] words = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
 
-                        if (words.Length != 0)
-                            if (words[0].ToLower() == "\"category\"")
-                                cat = words[1].Replace("_", " ");
-                            else if (words[0].ToLower() == "\"title\"")
-                                tit = words[1].Replace("_", " ");
-                            else if(words[0].ToLower() == "\"history\"")
-                                list.Add(new jsonconvert(id++, cat, tit, words[1].Replace("_", " ")));
-                    }
+                    if (words.Length != 0)
+                        for (int i = 0; i < words.Length; i += 2)
+                            if (words[i].ToLower() == "\"category\"")
+                                cat = words[i + 1].Replace("_", " ");
+                            else if (words[i].ToLower() == "\"title\"")
+                                tit = words[i + 1].Replace("_", " ");
+                            else if (words[i].ToLower() == "\"history\"")
+                                list.Add(new jsonconvert(id++, cat, tit, words[i + 1].Replace("_", " ")));
+
                     Console.WriteLine(id);
                 }
             }
