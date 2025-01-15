@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontKEP", "FrontKEP\FrontKEP.csproj", "{BFC2FCF5-3839-4E44-8AF2-0C9912B5B816}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC2FCF5-3839-4E44-8AF2-0C9912B5B816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC2FCF5-3839-4E44-8AF2-0C9912B5B816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC2FCF5-3839-4E44-8AF2-0C9912B5B816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC2FCF5-3839-4E44-8AF2-0C9912B5B816}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68372570-189D-4A8C-BC47-EDA9D4E0FB73}
+	EndGlobalSection
+EndGlobal
